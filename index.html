@@ -1,3 +1,90 @@
+<!DOCTYPE html>
+<html lang="ko">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>정채연의 P5.js 과제 모음 (20231190)</title>
+    <style>
+        body { 
+            font-family: 'Malgun Gothic', '맑은 고딕', Arial, sans-serif; 
+            margin: 40px; 
+            line-height: 1.6; 
+            background-color: #f8f8f8;
+            color: #333;
+        }
+        header { 
+            border-bottom: 3px solid #007bff;
+            padding-bottom: 20px; 
+            margin-bottom: 30px; 
+            text-align: center;
+        }
+        h1 { 
+            color: #1a1a1a; 
+            font-size: 2.2em;
+            margin-bottom: 10px;
+        }
+        h2 {
+            color: #007bff;
+            text-align: center;
+            margin-top: 40px;
+            margin-bottom: 25px;
+        }
+        p {
+            font-size: 1.1em;
+            color: #555;
+        }
+        
+        /* 🚨 2x2 배치를 위한 핵심 CSS 🚨 */
+        .project-group {
+            display: grid; /* Grid 사용: 요소를 격자 형태로 배치 */
+            grid-template-columns: 1fr 1fr; /* 1:1 비율의 2개 열 생성 */
+            gap: 20px; /* 항목 간 간격 */
+        }
+        
+        .project-item { 
+            margin-bottom: 0; /* Grid를 사용하므로 세로 간격은 gap이 담당 */
+            padding: 15px; 
+            border: 1px solid #ddd; 
+            border-left: 5px solid #007bff;
+            border-radius: 8px; 
+            background-color: #ffffff;
+            transition: transform 0.2s, box-shadow 0.2s;
+        }
+        .project-item:hover {
+            transform: translateY(-3px);
+            box-shadow: 0 6px 12px rgba(0, 0, 0, 0.15);
+        }
+        .project-item a { 
+            text-decoration: none; 
+            color: #1a1a1a; 
+            font-weight: normal;
+            display: block;
+            font-size: 1.1em;
+        }
+        .project-item a strong {
+            font-weight: bold;
+            color: #007bff;
+            margin-right: 5px;
+        }
+        .project-item a:hover {
+            text-decoration: none;
+            color: #0056b3;
+        }
+        hr {
+            border: none;
+            border-top: 1px dashed #ccc;
+            margin: 40px 0;
+        }
+        footer {
+            text-align: center;
+            margin-top: 50px;
+            padding-top: 20px;
+            border-top: 1px solid #eee;
+            color: #777;
+            font-size: 0.9em;
+        }
+    </style>
+</head>
 <body>
     <header>
         <h1>정채연의 P5.js 작품 포트폴리오</h1>
@@ -41,3 +128,4 @@
         <p>&copy; 2025 정채연. All rights reserved.</p>
     </footer>
 </body>
+</html>
